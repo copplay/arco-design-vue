@@ -1,0 +1,41 @@
+@import '../../style/theme/index.less';
+
+@overflow-prefix-cls: ~'@{prefix}-overflow-list';
+
+.@{overflow-prefix-cls} {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  > * {
+    flex-shrink: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-size-mini {
+    > * {
+      margin-right: 4px;
+    }
+  }
+
+  &-size-small {
+    > * {
+      margin-right: 8px;
+    }
+  }
+
+  &-size-medium {
+    > * {
+      margin-right: 16px;
+    }
+  }
+
+  &-size-large {
+    > * {
+      margin-right: 24px;
+    }
+  }
+}
